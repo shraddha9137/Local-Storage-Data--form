@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="myForm" onsubmit="myfunc(event)">
+        <div>
+            <label>Full Name:</label>
+            <input type="text" id="Full_Name" placeholder="Enter Full Name" required/>
+        </div>
+        <br>
+    
+        <div>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male" required/> Male
+            <input type="radio" id="female" name="gender" value="Female" required/> Female
+        </div>
+        <br>
+    
+        <div>
+            <label>Date of Birth:</label>
+            <input type="date" id="Date_of_birth" required/>
+        </div>
+        <br>
+    
+        <div>
+            <label>Email:</label>
+            <input type="email" id="Email_id" required/>
+        </div>
+        <br>
+    
+        <input id="mysubmit" type="submit" value="Submit"/>
+    </form>
+    
+    <p id="successMessage" style="color: green;"></p>
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>
